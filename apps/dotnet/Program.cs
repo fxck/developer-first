@@ -11,7 +11,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-app.MapGet("/", () => new Response { Status = "ok" });
+app.MapGet("/", () => new Response { Status = "OK" });
 
 app.UseCors();
 
