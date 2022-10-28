@@ -3,7 +3,8 @@
   "projects": {
     "angular": "apps/angular",
     "angular-e2e": "apps/angular-e2e",
+    "dotnet": "apps/dotnet",
     "go": "apps/go",
-    "dotnet": "apps/dotnet"
+    "nestjs": "apps/nestjs"
   }
 }
