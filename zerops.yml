@@ -32,6 +32,7 @@ go:
       - go@1
       - nodejs@16
     build:
+      - npm i
       - npm run build go
     deploy:
       - dist/apps/go
