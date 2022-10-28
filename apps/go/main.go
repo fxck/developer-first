@@ -1,12 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"net/http"
+)
 
-func Hello(name string) string {
-	result := "Hello " + name
-	return result
+func api(w http.ResponseWriter, req *http.Request) {
+	w.Write([]byte(`{"status":"OK"}`))
 }
 
 func main() {
-	fmt.Println(Hello("go"))
+	http.HandleFunc("/", api)
+	http.ListenAndServe(":8080", nil)
 }
