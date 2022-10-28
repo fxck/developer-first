@@ -25,3 +25,14 @@ nestjs:
       - node_modules
   run:
     start: node main.js
+
+go:
+  build:
+    base:
+      - go@1
+    build:
+      - npm run build go
+    deploy:
+      - dist/apps/go
+  run:
+    start: ./go
