@@ -9,3 +9,18 @@ angular:
       - 'dist/apps/angular/~'
     cache:
       - node_modules
+
+nestjs:
+  build:
+    base:
+      - nodejs@16
+    build:
+      - npm i
+      - npm run build nestjs
+    deploy:
+      - dist/apps/nestjs/~
+      - package.json
+    cache:
+      - node_modules
+  run:
+    start: node main.js
