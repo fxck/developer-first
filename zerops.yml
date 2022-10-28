@@ -7,9 +7,13 @@ angular:
       - npm i
       - npm run build angular
     deploy:
-      - 'dist/apps/angular/~'
+      - dist/apps/angular/~
     cache:
       - node_modules
+  run:
+    envReplace:
+      target: ./
+      delimiter: "%%"
 
 nestjs:
   build:
@@ -53,7 +57,7 @@ dotnet:
       - npm i
       - npm run build dotnet
     deploy:
-      - "dist/apps/dotnet/net6.0/~"
+      - dist/apps/dotnet/net6.0/~
     cache:
       - node_modules
   run:
