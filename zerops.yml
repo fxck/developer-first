@@ -19,6 +19,7 @@ nestjs:
       - npm run build nestjs
     deploy:
       - dist/apps/nestjs/~
+      - node_modules
       - package.json
     cache:
       - node_modules
