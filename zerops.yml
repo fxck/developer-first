@@ -36,5 +36,7 @@ go:
       - npm run build go
     deploy:
       - dist/apps/go
+    cache:
+      - node_modules
   run:
     start: ./go
