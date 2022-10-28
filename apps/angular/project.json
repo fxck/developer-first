@@ -53,11 +53,11 @@
     },
     "serve": {
       "executor": "@angular-devkit/build-angular:dev-server",
+      "options": {
+        "host": "0.0.0.0",
+        "disableHostCheck": true
+      },
       "configurations": {
-        "options": {
-          "host": "0.0.0.0",
-          "disableHostCheck": true
-        },
         "production": {
           "browserTarget": "angular:build:production"
         },

@@ -53,6 +53,9 @@ dotnet:
     prepare:
       - sudo apt update
       - sudo apt install nodejs npm --yes
+      - npm config set prefix '~/.npm'
+      - npm i -g n
+      - /root/.npm/bin/n 16.4.0
     build:
       - npm i
       - npm run build dotnet
@@ -100,6 +103,9 @@ golocal:
       - ln -s go-1.18 /usr/lib/go
       - ln -s go-1.18 /usr/share/go
       - go install github.com/mitranim/gow@latest
+      - npm config set prefix '~/.npm'
+      - npm i -g n
+      - /root/.npm/bin/n 16.4.0
     init:
       - go env
     start: npm start go
