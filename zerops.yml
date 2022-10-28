@@ -47,7 +47,7 @@ dotnet:
       - dotnet@6
     prepare:
       - sudo apt update
-      - sudo apt install nodejs --yes
+      - sudo apt install nodejs npm --yes
     build:
       - npm i
       - npm run build dotnet
