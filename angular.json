@@ -2,6 +2,8 @@
   "version": 2,
   "projects": {
     "angular": "apps/angular",
-    "angular-e2e": "apps/angular-e2e"
+    "angular-e2e": "apps/angular-e2e",
+    "go": "apps/go",
+    "dotnet": "apps/dotnet"
   }
 }
