@@ -8,7 +8,7 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "prepare": "nx g @nx-dotnet/core:restore"
+    "prepare:dotnet": "nx g @nx-dotnet/core:restore"
   },
   "private": true,
   "dependencies": {
