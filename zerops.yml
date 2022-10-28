@@ -40,3 +40,18 @@ go:
       - node_modules
   run:
     start: ./go
+
+dotnet:
+  build:
+    base:
+      - dotnet@6
+      - nodejs@16
+    build:
+      - npm i
+      - npm run build dotnet
+    deploy:
+      - "dist/apps/dotnet/net6.0/~"
+    cache:
+      - node_modules
+  run:
+    start: dotnet DeveloperFirst.Dotnet.dll
