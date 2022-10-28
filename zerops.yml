@@ -1,3 +1,4 @@
+# production services
 angular:
   build:
     base:
@@ -57,3 +58,5 @@ dotnet:
       - node_modules
   run:
     start: dotnet DeveloperFirst.Dotnet.dll
+
+# local development services
