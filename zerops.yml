@@ -1,0 +1,11 @@
+angular:
+  build:
+    base:
+      - nodejs@16
+    build:
+      - npm i
+      - npm run build angular
+    deploy:
+      - 'dist/apps/angular/~'
+    cache:
+      - node_modules
