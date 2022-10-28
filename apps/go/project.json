@@ -6,7 +6,7 @@
     "build": {
       "executor": "@nx-go/nx-go:build",
       "options": {
-        "outputPath": "dist/apps/~/go",
+        "outputPath": "dist/apps/go",
         "main": "apps/go/main.go"
       }
     },

@@ -35,7 +35,7 @@ go:
       - npm i
       - npm run build go
     deploy:
-      - dist/apps/go
+      - dist/apps/~/go
     cache:
       - node_modules
   run:
