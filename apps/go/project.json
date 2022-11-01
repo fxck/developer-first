@@ -13,7 +13,9 @@
     "serve": {
       "executor": "@nx-go/nx-go:serve",
       "options": {
-        "main": "apps/go/main.go"
+        "main": "apps/go/main.go",
+        "cmd": "gow",
+        "cwd": "."
       }
     },
     "lint": {
