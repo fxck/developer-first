@@ -71,6 +71,9 @@ angularlocal:
   build:
     base:
       - nodejs@16
+      - go@1
+    prepare:
+      - echo "we done here"
     build:
       - npm i
     deploy:
@@ -78,6 +81,8 @@ angularlocal:
     cache:
       - node_modules
   run:
+    prepare:
+      - echo "we done here"
     start: npm start angular
 
 golocal:
@@ -86,6 +91,8 @@ golocal:
       - nodejs@16
     build:
       - npm i
+    prepare:
+      - echo "we done here"
     deploy:
       - ./
   run:
