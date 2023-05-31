@@ -69,7 +69,8 @@ dotnet:
 api:
   build:
     base:
-      - [dotnet@6, nodejs@16]
+      - dotnet@6 
+      - nodejs@16
     build:
       - npm i
       - npm run build dotnet
